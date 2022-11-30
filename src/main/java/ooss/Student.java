@@ -7,6 +7,8 @@ public class Student extends Person {
     }
     @Override
     public String introduce(){
+        if (this.klass.isLeader(this))
+            return super.introduce() + " I am a student. I am the leader of class "+ this.klass.getNumber() + ".";
         return super.introduce() + " I am a student. I am in class " + this.klass.getNumber() + ".";
     }
     public void join(Klass klass){
