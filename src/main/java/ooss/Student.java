@@ -16,4 +16,8 @@ public class Student extends Person {
     public Boolean isIn(Klass klass){
         return klass.equals(this.klass);
     }
+    public Klass getKlass() {
+        return klass;
+    }
+
 }
